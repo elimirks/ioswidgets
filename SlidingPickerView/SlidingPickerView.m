@@ -1,6 +1,8 @@
 #import "SlidingPickerView.h"
 
 #define ANIMATION_DURATION 0.2
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define IS_IOS_7_OR_LATER (IOS_VERSION >= 7.0)
 
 @implementation SlidingPickerView
 +(instancetype)new {
